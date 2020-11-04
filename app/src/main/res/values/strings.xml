@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Listass_</string>
+    <string-array name="Programming_lenguages">
+        <item>C++</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Ruby on Rails</item>
+        <item>Html</item>
+        <item>C#</item>
+        <item>Javascript</item>
+    </string-array>
+
+    <string-array name="Description">
+        <item>este es el lenguaje C++</item>
+        <item>Java mi gran amor</item>
+        <item>Python un lenguaje sencillo</item>
+        <item>Ruby on Rails no me gusta</item>
+        <item>Swift unico para IOS</item>
+        <item>C# aun por aprender</item>
+        <item>Javascript el mas popular ahora mismo</item>
+    </string-array>
+</resources>
