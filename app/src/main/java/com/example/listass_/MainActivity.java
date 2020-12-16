@@ -10,6 +10,9 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     String s1 [],s2[];
 
+    //ME HAN FELICITADO POR MI DESEMPEÑO EN EL INSTITUT
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

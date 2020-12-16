@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     Context context;
     String data1[];
@@ -21,6 +22,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @NonNull
     @Override
+    // Crea nuevas vistas(invoked by the layout manager)
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(context);
         View view=inflater.inflate(R.layout.my_row,parent,false);
@@ -28,6 +30,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
+    /*Este método usa la posición del contenedor de vistas para determinar cuál debería ser el contenido,
+    en función de su posición en la lista.
+    Replace the contents of a view (invoked by the layout manager)*/
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.Text_1.setText(data1[position]);
         holder.Text_2.setText(data2[position]);
@@ -38,6 +43,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return data1.length;
     }
 
+    /*cada instancia de esta clase es un contenedor de vistas,
+    Cada objeto contenedor de vistas es responsable de mostrar un elemento individual con una vista.*/
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView Text_1,Text_2;
         public MyViewHolder(@NonNull View itemView) {
@@ -46,4 +53,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             Text_2=itemView.findViewById(R.id.Text_2);
         }
     }
+
+
 }
